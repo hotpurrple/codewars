@@ -29,7 +29,7 @@ function generatearr(num1, num2) {
 
 //rot13
 
-let text = "Tova e textov test"
+let text2 = "Tova e textov test"
 
 function rot13(text) {
   let alphabet = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
@@ -51,5 +51,20 @@ function rot13(text) {
   })
   return text.join("");
 }
+//Simple Pig Latin
 
+let text = "Pig latin is cool ?"
 
+function pigIt(text) {
+
+ text = text.split(" ").map(e => {
+    if (!/[.,\/#!?$%\^&\*;:{}=\-_`~()]/g.test(e)) {
+    let first = e[0];
+    e = e.slice(1).concat(`${first}ay`)
+    return e;
+    } else {
+      return e
+    }
+  })
+  return text.join(" ");
+}
