@@ -27,6 +27,29 @@ function generatearr(num1, num2) {
   return masiv;
 }
 
+//rot13
 
+let text = "Tova e textov test"
+
+function rot13(text) {
+  let alphabet = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+  let bigalphabet = alphabet.toUpperCase()
+  text = text.split("").map(e => {
+
+    if (/^[A-Za-z]+$/.test(e)) {
+      if (alphabet.includes(e)) {
+        e = e.replace(e, alphabet[alphabet.indexOf(e)+13])
+
+      } else if (bigalphabet.includes(e)) {
+        e = e.replace(e, bigalphabet[bigalphabet.indexOf(e)+13])
+
+      }
+      return e;
+    } else {
+      return e;
+    }
+  })
+  return text.join("");
+}
 
 
