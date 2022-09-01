@@ -111,3 +111,44 @@
 // Array.prototype.sameStructure = sameStructure
 
 //
+
+//trailing zero factorial--------------------------------------------------
+
+// function zeros(num) {
+
+//   function fact(num, mult = num) {
+//     if (num === 0) {
+//       return 0
+//     }
+//     if (mult === 1) {
+//       return num
+//     }
+//     num *= mult - 1
+//     mult--
+//     return fact(num, mult)
+//   }
+
+//   let result = fact(num).toString().split("").map(e => Number(e))
+//   let valid = result.every(e => {
+//     return !isNaN(e)
+//   })
+//   if (!valid) {
+//     return "scientific number"
+//   }
+//   let cnt = 0;
+//   for (let i = result.length - 1; i > 0; i--) {
+//     if (result[i] === NaN) {
+
+//       return "scientific number zzz"
+//     }
+//     if (result[i] !== 0) {
+//       break;
+//     } else {
+//       cnt++
+//     }
+//   }
+//   return cnt;
+// }
+
+
+
