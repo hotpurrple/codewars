@@ -150,5 +150,15 @@
 //   return cnt;
 // }
 
+//sumOfSquaresOfDivisors----------------------------------------------------------------
 
-
+function sumOfSquaresOfDivisors(num) {
+  let divisors = []
+  for (let i = num; i > 1; i--) {
+    if (num % i === 0) {
+      divisors.push(i)
+    }
+  }
+  divisors = divisors.reduce((total, item) => { return total + (item ** 2) }, 0)
+  return divisors
+}
