@@ -70,6 +70,13 @@
 //   return text.join(" ");
 // }
 
-//Maximum subarray sum------------------------------------------------------------
+//Moving Zeros To The End
 
-console.log(Math.floor(4400 / 1000) * 1000, Math.floor(4400 / 1000) * 100, (4400 % 100));
+let masiv = [12, 4, 1, 0, 382, 1, "0", 38, 2, 0, 0, 0, 2, 4, 6, 8]
+
+function moveZeros(masiv) {
+
+  masiv = masiv.filter(e => e !== 0).concat(masiv.filter(e => e === 0))
+
+  return masiv
+}
