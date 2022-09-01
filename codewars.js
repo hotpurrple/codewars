@@ -72,14 +72,14 @@
 
 //Moving Zeros To The End------------------------------------------------------------------------
 
-let masiv = [12, 4, 1, 0, 382, 1, "0", 38, 2, 0, 0, 0, 2, 4, 6, 8]
+// let masiv = [12, 4, 1, 0, 382, 1, "0", 38, 2, 0, 0, 0, 2, 4, 6, 8]
 
-function moveZeros(masiv) {
+// function moveZeros(masiv) {
 
-  masiv = masiv.filter(e => e !== 0).concat(masiv.filter(e => e === 0))
+//   masiv = masiv.filter(e => e !== 0).concat(masiv.filter(e => e === 0))
 
-  return masiv
-}
+//   return masiv
+// }
 
 //Nesting Structure Comparison----------------------------------------------------------------
 
