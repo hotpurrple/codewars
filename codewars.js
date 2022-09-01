@@ -109,3 +109,5 @@ function moveZeros(masiv) {
 // }
 
 // Array.prototype.sameStructure = sameStructure
+
+//
