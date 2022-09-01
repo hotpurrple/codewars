@@ -70,7 +70,7 @@
 //   return text.join(" ");
 // }
 
-//Moving Zeros To The End
+//Moving Zeros To The End------------------------------------------------------------------------
 
 let masiv = [12, 4, 1, 0, 382, 1, "0", 38, 2, 0, 0, 0, 2, 4, 6, 8]
 
@@ -80,3 +80,32 @@ function moveZeros(masiv) {
 
   return masiv
 }
+
+//Nesting Structure Comparison----------------------------------------------------------------
+
+// let arr1 = [[ [ ], [ ] ]]
+// let arr2 = [[ 1, 1 ]]
+
+// function sameStructure(arr2) {
+
+
+//   function count(arr, cnt) {
+//     arr.forEach((e) => {
+//       if (Array.isArray(e)) {
+//         if (e.length === 0) {
+//           cnt++
+//         } else {
+//         cnt += e.length
+//       }
+//       } else {
+//         cnt++
+//       }
+//     })
+//     return cnt
+//   }
+
+//   return count(this, 0) === count(arr2, 0)
+
+// }
+
+// Array.prototype.sameStructure = sameStructure
