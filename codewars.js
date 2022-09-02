@@ -165,3 +165,68 @@
 
 //--------------------------------------------------------------------------------------
 
+// let str1 = 'katas' 
+// let str2 = 'steak'
+
+// function scramble(word1, word2) {
+
+//   word1 = word1.split("")
+//   word1.forEach((e) => {
+//     if (word2.includes(e)) {
+//       word2 = word2.replace(word2[word2.indexOf(e)], "")
+//     }
+//   })
+//   if (word2.length > 0) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+//--------------------------------------------------------------------------------
+
+
+// let text1 = "abba"
+// let text2 = ['aabb', 'abcd', 'bbaa', 'dada']
+
+// function anagrams(str1, masiv) {
+//   function sortString(string) {
+//     string = string.split("").sort().join("")
+//     return string;
+//   }
+
+//   masiv = masiv.filter(e => {
+//     return sortString(e) === sortString(str1)
+//   })
+//   return masiv;
+// }
+
+// ---------------------------------------------------------------------------------
+
+// function humanReadable(num) {
+//   let masiv = [00, 00, 00]
+
+//   for (let i = 1; i <= num; i++) {
+//     masiv[2]++
+//     if (i % 60 === 0 && i > 0) {
+//       masiv[2] = 0;
+//       masiv[1]++
+//     }
+//     if (masiv[1] === 60) {
+//       masiv[0]++
+//       masiv[1] = 0;
+//     }
+//   }
+//   masiv = masiv.map(e => {
+//     if (e < 10) {
+//       return `0${e}`
+//     } else {
+//       return e;
+//     }
+//   })
+//   return masiv.join(":");
+// }
+
+//-----------------------------------------------------------------------------------
+
+
